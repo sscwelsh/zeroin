@@ -1,0 +1,39 @@
+.Splash {
+	position: absolute !important;
+	top: 0 !important;
+	bottom: 0 !important;
+	left: 0 !important;
+	right: 0 !important;
+	margin: auto !important;
+	z-index: 130 !important;
+}
+.Splash .InnerWrapper {
+	height: 100%;
+}
+.Splash .ImageCenter {
+	display: inline-block;
+	height: 100%;
+	vertical-align: middle;
+}
+.Splash .InnerContainer {
+	height: 100%;
+	white-space: nowrap;
+	text-align: center;
+	background-color: rgb(0, 0, 0);
+	opacity: 1;
+}
+.Splash.IsClosed {
+	display: none;
+}
+.Splash img {
+	max-width: 80vw;
+	vertical-align: middle;
+}
+
+.Splash .SplashFooter {
+	position: absolute;
+	bottom: 10px;
+	text-align: center;
+	left: 0px;
+	right: 0px;
+}

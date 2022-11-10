@@ -1,0 +1,14 @@
+.LayerFolderIsClosed {
+	display: none;
+}
+.FolderHeader > div {
+	display: inline-block;
+	vertical-align: top;
+}
+.LayerFolderContents {
+	margin-left: 20px;
+}
+
+.FolderHeaderToggle{
+	cursor: pointer;
+}

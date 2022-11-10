@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+	<head></head>
+	<body>
+		<script>
+			if (opener) {
+				if (location.hash) {
+					if (
+						typeof opener.require === "function" &&
+						opener.require("esri/kernel")
+					) {
+						opener
+							.require("esri/kernel")
+							.id.setOAuthResponseHash(
+								location.hash + "&persist=true"
+							);
+					} else {
+						opener.dispatchEvent(
+							new CustomEvent("arcgis:auth:hash", {
+								detail: location.hash,
+							})
+						);
+					}
+					close();
+				}
+			} else {
+				close();
+			}
+		</script>
+	</body>
+</html>

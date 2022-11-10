@@ -1,0 +1,105 @@
+.HorizontalTray {
+	position: absolute;
+	height: 0px;
+	overflow: visible;
+	z-index: 101;
+}
+
+.HorizontalTray .WidgetFrame {
+	margin: 20px 10px 10px;
+}
+
+.HorizontalTray.VerticalAnchorLeft {
+	right: 0px;
+}
+.HorizontalTray.VerticalAnchorLeft.IsVerticalTrayClosed {
+	left: 0;
+}
+
+.HorizontalTray.VerticalAnchorRight {
+	left: 0;
+}
+.HorizontalTray.VerticalAnchorRight.IsVerticalTrayClosed {
+	right: 0;
+}
+
+.HorizontalTray.AnchorTop {
+	top: 0;
+	bottom: auto;
+}
+.HorizontalTray.AnchorBottom {
+	top: auto;
+	bottom: 0;
+}
+.HorizontalTray.IsClosed {
+	height: 0 !important;
+}
+
+.HorizontalTray .Toggle {
+	width: 63px;
+	left: 0;
+	right: 0;
+	margin: auto;
+	position: absolute;
+	cursor: pointer;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-color: rgba(0, 0, 0, 0.7);
+	border: 2px solid rgba(255, 255, 255, 0.8);
+
+	text-align: center;
+	color: white;
+}
+
+.HorizontalTray.AnchorBottom .Toggle {
+	top: -22px;
+	border-radius: 8px 8px 0px 0px;
+	height: 20px;
+	padding-bottom: 5px;
+	border-bottom-style: none;
+}
+
+.HorizontalTray.AnchorTop .Toggle {
+	border-radius: 0px 0px 8px 8px;
+	padding-bottom: 5px;
+	height: 17px;
+	bottom: -20px;
+	border-top-style: none;
+}
+.HorizontalTray .DragHandle {
+	height: 11px;
+	background-color: #333;
+	border-bottom: 1px solid #4d4d4d;
+	cursor: n-resize;
+	position: absolute;
+	left: 0px;
+	right: 0px;
+	text-align: center;
+	color: white;
+}
+
+.HorizontalTray.AnchorBottom .DragHandle {
+	top: 0px;
+}
+.HorizontalTray.AnchorTop .DragHandle {
+	bottom: 0px;
+}
+
+.HorizontalTray .DragHandle > span {
+	position: absolute;
+
+	left: 0;
+	right: 0;
+	margin: auto;
+}
+
+.HorizontalTray.AnchorBottom .DragHandle > span {
+	top: -7px;
+}
+.HorizontalTray.AnchorTop .DragHandle > span {
+	top: -5px;
+}
+
+.HorizontalTray.Panel{
+	background-color: white;
+}

@@ -1,0 +1,190 @@
+#map {
+	position: absolute;
+	background-color: rgb(238, 238, 238);
+	overflow: hidden;
+	min-width: 1px;
+	min-height: 1px;
+	width: auto;
+	height: auto;
+	padding: 0px;
+	margin: auto;
+	z-index: auto;
+}
+
+.MapHolder .HeaderIcon {
+	inset: 17px auto auto 15px;
+	width: auto;
+	height: 46px;
+	padding: 0px;
+	margin: auto;
+	z-index: auto;
+	position: absolute;
+	visibility: visible;
+}
+
+.MapHolder .Logo {
+	height: 50px;
+	margin-right: auto;
+	padding: 0 10px;
+	margin-top: -2px;
+	min-width: 50px;
+	flex: 0 0 auto;
+}
+
+.MapHolder .LogoImage {
+	height: 16px;
+}
+
+.MapHolder .SearchContainer {
+	position: absolute;
+	top: 20px;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+}
+
+.MapWidgetPanels{
+    position: absolute;
+}
+.esri-ui-bottom-left {
+	flex-flow: column;
+	align-items: flex-start;
+}
+
+.esri-basemap-gallery__item-container {
+    flex-flow: row wrap;
+    align-items: baseline;
+}
+
+.esri-basemap-gallery__item {
+    border: 1px solid rgba(0,0,0,0);
+    flex-flow: column wrap;
+    width: 90px;
+    margin: 3px 2%;
+    padding: 12px 0;
+    text-align: center;
+}
+
+.WidgetHolders {
+	width: 80%;
+    margin: 0 auto;
+    position: relative !important;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.WidgetContainer{
+
+    padding: 0px;
+    margin: auto;
+    z-index: 101;
+    position: absolute;
+    opacity: 1;
+    overflow: hidden;
+    touch-action: none;
+	background-color: #4c4c4c;
+    border: 0 none;
+    box-shadow: 0 7px 3px -4px rgb(0 0 0 / 30%), 0 8px 8px rgb(0 0 0 / 20%);
+    transition: box-shadow ease-in-out 0.1s;
+	box-sizing: border-box;
+}
+
+
+.WidgetTitle{
+	height: 30px;
+    width: 100%;
+	color: #f1f1f1;
+	position: relative;
+	display: flex;
+	background-color: #003865;
+	box-sizing: border-box;
+	margin: 0;
+    padding: 0;
+}
+
+.WidgetIcon {
+	height: 16px;
+    width: 16px;
+    cursor: pointer;
+    padding: 4px;
+}
+
+.WidgetTitleHeader{
+	overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    line-height: 33px;
+    flex-grow: 1;
+    padding: 0 10px;
+    margin: 0;
+    font-size: 14px;
+    font-weight: normal;
+    cursor: move;
+}
+
+.WidgetButtons{
+	min-width: 56px;
+    max-width: 84px;
+    flex-grow: 0;
+    display: flex;
+    height: calc(100% - 4px);
+    margin-top: 2px;
+    margin-right: 2px;
+	columns: #f1f1f1;
+    cursor: pointer;
+}
+
+.WidgetContent{
+	left: 0;
+    right: 0;
+    bottom: 0;
+    top: 30px;
+    position: absolute;
+    height: calc(100% - 30px);
+}
+
+.WidgetContentContainer{
+	background-color: #6c6463;
+    color: #ffffff;
+	overflow-x: auto;
+    overflow-y: auto;
+    position: relative;
+	padding: 0px 14px;
+	height: 100%;
+}
+.WidgetContentContainer .esri-widget,.esri-basemap-gallery__item-container{
+    background-color: #6c6463;
+}
+
+
+.WidgetBar{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    width: 30%;
+    position: absolute;
+    bottom: 30px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    gap: 10px;
+}
+
+.WidgetBarIcon{
+    border-radius: 50%;
+    background-color: #003865 !important;
+}
+
+.MeasureBox{
+    text-align: center;
+    margin-top: 10px;
+}
+
+.MeasureBox .active {
+    text-decoration: none;
+    background-color: rgba(25, 118, 210, 0.04);
+    border: 1px solid #00a3e0;
+}
